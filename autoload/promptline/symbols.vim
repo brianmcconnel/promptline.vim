@@ -11,32 +11,30 @@ let s:simple_symbols = {
     \ 'truncation'          : '...',
     \ 'vcs_branch'          : '',
     \ 'battery'             : '',
-    \ 'space'               : ' ',',
+    \ 'space'               : ' ',
     \ 'added'               : '*',
     \ 'unmerged'            : 'X',
     \ 'modified'            : '+',
     \ 'clean'               : '.',
     \ 'has_untracked_files' : '…',
     \ 'ahead'               : '>',
-    \ 'behind'              : '<',
-    }
+    \ 'behind'              : '<'}
 
 let s:powerline_symbols = extend(copy(s:simple_symbols), {
-    \ 'left'                      : '',
-    \ 'right'                     : '',
-    \ 'left_alt'                  : '',
-    \ 'right_alt'                 : '',
-    \ 'dir_sep'                   : '  ',
-    \ 'truncation'                : '⋯',
-    \ 'vcs_branch'                : ' ',
-    \ 'added_symbol'              : '●',
-    \ 'unmerged_symbol'           : '✗',
-    \ 'modified_symbol'           : '+',
-    \ 'clean_symbol'              : '✔',
-    \ 'has_untracked_files_symbol': '…',
-    \ 'ahead_symbol'              : '↑',
-    \ 'behind_symbol'             : '↓',
-    }
+    \ 'left'               : '',
+    \ 'right'              : '',
+    \ 'left_alt'           : '',
+    \ 'right_alt'          : '',
+    \ 'dir_sep'            : '  ',
+    \ 'truncation'         : '⋯',
+    \ 'vcs_branch'         : ' ',
+    \ 'added'              : '●',
+    \ 'unmerged'           : '✗',
+    \ 'modified'           : '+',
+    \ 'clean_symbol'       : '✔',
+    \ 'has_untracked_files': '…',
+    \ 'ahead'              : '↑',
+    \ 'behind'             : '↓'}
 
 fun! promptline#symbols#get()
   let use_powerline_symbols = get(g:, 'promptline_powerline_symbols', 1)
