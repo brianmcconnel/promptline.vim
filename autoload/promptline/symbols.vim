@@ -34,7 +34,7 @@ let s:powerline_symbols = extend(copy(s:simple_symbols), {
     \ 'clean_symbol'        : '✔',
     \ 'has_untracked_files' : '…',
     \ 'ahead'               : '↑',
-    \ 'behind'              : '↓'}
+    \ 'behind'              : '↓'})
 
 fun! promptline#symbols#get()
   let use_powerline_symbols = get(g:, 'promptline_powerline_symbols', 1)
