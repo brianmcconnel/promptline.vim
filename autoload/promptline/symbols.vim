@@ -21,20 +21,20 @@ let s:simple_symbols = {
     \ 'behind'              : '<'}
 
 let s:powerline_symbols = extend(copy(s:simple_symbols), {
-    \ 'left'               : '',
-    \ 'right'              : '',
-    \ 'left_alt'           : '',
-    \ 'right_alt'          : '',
-    \ 'dir_sep'            : '  ',
-    \ 'truncation'         : '⋯',
-    \ 'vcs_branch'         : ' ',
-    \ 'added'              : '●',
-    \ 'unmerged'           : '✗',
-    \ 'modified'           : '+',
-    \ 'clean_symbol'       : '✔',
-    \ 'has_untracked_files': '…',
-    \ 'ahead'              : '↑',
-    \ 'behind'             : '↓'}
+    \ 'left'                : '',
+    \ 'right'               : '',
+    \ 'left_alt'            : '',
+    \ 'right_alt'           : '',
+    \ 'dir_sep'             : '  ',
+    \ 'truncation'          : '⋯',
+    \ 'vcs_branch'          : ' ',
+    \ 'added'               : '●',
+    \ 'unmerged'            : '✗',
+    \ 'modified'            : '+',
+    \ 'clean_symbol'        : '✔',
+    \ 'has_untracked_files' : '…',
+    \ 'ahead'               : '↑',
+    \ 'behind'              : '↓'}
 
 fun! promptline#symbols#get()
   let use_powerline_symbols = get(g:, 'promptline_powerline_symbols', 1)
