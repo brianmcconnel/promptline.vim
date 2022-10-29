@@ -234,7 +234,7 @@ let g:promptline_symbols =  {
     \ 'unmerged'            : 'X',
     \ 'modified'            : '+',
     \ 'clean'               : '.',
-    \ 'has_untracked_filesl': '…',
+    \ 'has_untracked_files' : '…',
     \ 'ahead'               : '>',
     \ 'behind'              : '<',
     }
