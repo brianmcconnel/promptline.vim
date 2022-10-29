@@ -220,13 +220,24 @@ Use `let g:promptline_powerline_symbols = 0` to disable using powerline symbols
 
 To configure symbols:
 ```
-let g:promptline_symbols = {
-    \ 'left'       : '',
-    \ 'left_alt'   : '>',
-    \ 'dir_sep'    : ' / ',
-    \ 'truncation' : '...',
-    \ 'vcs_branch' : '',
-    \ 'space'      : ' '}
+let g:promptline_symbols =  {
+    \ 'left'                : '',
+    \ 'right'               : '',
+    \ 'left_alt'            : '|',
+    \ 'right_alt'           : '|',
+    \ 'dir_sep'             : ' / ',
+    \ 'truncation'          : '...',
+    \ 'vcs_branch'          : '',
+    \ 'battery'             : '',
+    \ 'space'               : ' ',',
+    \ 'added'               : '*',
+    \ 'unmerged'            : 'X',
+    \ 'modified'            : '+',
+    \ 'clean'               : '.',
+    \ 'has_untracked_filesl': '…',
+    \ 'ahead'               : '>',
+    \ 'behind'              : '<',
+    }
 ```
 
 ### Custom slice
